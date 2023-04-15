@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,57 @@
     <link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
     <title>Formatações de códigos, citações e abreviações - Módulo 1</title>
 </head>
+
 <body>
     <h1>Formatações de códigos, citações e abreviações.</h1>
     <p>
-
+        Exercício como formatar textos para: código-fonte, citações simples, citações completas, abreviações e texto
+        invertido.
     </p>
+
     <h2>Resolução do exercício</h2>
 
+    <h3>Código-fonte / Pré-formatação</h3>
+
+    <p>
+        O comando document.getElementById('teste') é escrito em linguagem JavaScript. (frase sem a tag CODE)
+        O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript. (frase com a tag
+        CODE)
+        <!-- com a tag CODE o texto que esta dentro da tag fica com uma fonte monoespaçada para facilitar a leitura e principalmente para dar sentido que aquele texto é um código html -->
+    </p>
+
+    <!-- a tag PRE é utilizada para pre-formatação de texto. Ela irá manter o texto conforme ele está digitada no html, conforme exemplo abaixo de um trecho de código Python -->
+    <pre>
+        <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+        print(f'O número {num} é PAR')
+        else:
+        print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+        </code>
+    </pre>
+
+    <h3>Citações simples</h3>
+    <!-- Usar a tag Q (quote) para colocar citações de alguém entre aspas. Assim vc dará sentido que aquela frase é uma citação. Usar as aspas direto no texto quando não for uma citação. -->
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+
+    <h3>Citações completas</h3>
+    <!-- Citações completas com a tag BLOCKQUOTE é quando quer referenciar trechos com textos maiores. Ainda é possível usar o parâmetro CITE para colocar de onde foi retirado o texto, como link de livro, etc. O CITE é para interpretação dos buscadores e nñåo aparece no site para o usuário -->
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote
+        cite="https://www.google.com.br/books/edition/Criando_Sites_com_HTML/_HBVQ-w5ZcoC?hl=en&gbpv=1&dq=Livro+html&printsec=frontcover">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem
+        os blocos de blockquote>
+    </blockquote>   
+
+    <h3>Abreviações</h3>
+    <!-- Com a tag ABBR é possível colocar o significado de uma abreviação onde o usuário passa o mouse em cina e o texto aparece. -->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+
+    <h3>Texto invertido</h3>
+    <p>Estou aprendendo a criar coisas em HTML.</p>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
 
     <p>
         Página principal <a href="index.html">&#11014</a>
@@ -24,4 +69,5 @@
     </p>
 
 </body>
+
 </html>
