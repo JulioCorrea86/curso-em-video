@@ -25,9 +25,32 @@
         navegador.
     </p>
 
+    <picture>
+        <!-- A tag PICTURE permite adicionar diversas sources de imagem diferentes. -->
+        <!-- Passo a passo para incluir imagem dinâmica:
+        1. iniciar com a tag IMG e buscar a maior imagem disponível
+        2. em seguida usar a tag source:media:type acima da tag IMG para buscar as imagens menores
+        3. alterar a referência de medida de MIN (padrão) para MAX
+        4. no parâmetro SRCSET colocar o caminho da imagem imediatamente menor, e assim sucessivamente
+        OBS:
+        1. no exercício, as imagens dispon[iveis eram de 1000px G, 700px M e 300px P
+        2. colocar sempre 50px a mais no parâmetro MAX-WIDTH para não ficar com barra de rolagem na transição das imagens. -->
+        <source media="(max-width: 750px)" srcset="imagens/img-dinamica-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-dinamica-m.png" type="image/png">
+        <img src="imagens/img-dinamica-g.png" alt="imagem dinâmica">
+    </picture>
+
     <h3>Reproduzindo Áudio</h3>
     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
 
+
+    <p>
+        Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+        <br>
+        Exercício anterior <a href="m01e009.html" target="_self" rel="prev">&#11013</a>
+        <br>
+        Próximo exercício <a href="m01e011.html" target="_self" rel="next">&#10145</a>
+    </p>
 
 </body>
 
