@@ -42,8 +42,19 @@
 
     <h3>Reproduzindo Áudio</h3>
     <p>Vamos aprender a reproduzir áudios em HTML5. Teste 3</p>
-    <audio src="midias/audio-mp3-palms.mp3" controls autoplay></audio>
-
+    <!-- <audio src="midias/audio-mp3-palms.mp3" controls autoplay></audio>
+    Para ter compatibilidade de ádio em todos os navegadores precisará ter os formatos MP3, WAV e OGG. Com isso essa forma de adicionar áudio fica inviável. -->
+    <audio preload="metadata" controls autoplay>
+        <source src="midias/audio-mp3-palms.mp3" type="audio/mpeg">
+        <source src="midias/audio-mp3-palms.wav" type="audio/wav">
+        <source src="midias/audio-mp3-palms.ogg" type="audio/ogg">
+        <!-- adicionar a tag audio e tirar o parâmetro padrão SRC e incluir o SOURCE SRC TYPE -->
+        <!-- preload pode ser:
+            1. AUTO que considera dite acrregado após baixar td o audio...é um perigo pq se o áudio for grande atrapalha preformance do site
+            2. METADATA que carrega informações básicas do áudio...é o recomendado
+            3. NONE que não aparece informação nenhuma até o usuário dar play -->
+        <!-- Sempre será respeitado a ordem para rodar o áudio de cima pra baixo, ou seja, do mp3 para o ogg -->
+    </audio>
 
     <p>
         Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
