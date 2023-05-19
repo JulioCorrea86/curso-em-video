@@ -8,6 +8,21 @@
 	<link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
 
 	<style>
+
+		@font-face { /*@font-face é usado para fontes locais. */
+			font-family: 'UbuntuMono';
+			src: url('UbuntuMono-Bold.ttf') format('truetype'), url('UbuntuMono-BoldItalic.ttf') format('truetype'), url('UbuntuMono-Italic.ttf') format('truetype'), url('UbuntuMono-Regular.ttf') format('truetype');
+			/*
+			Tipos de format():
+			- opentype (otf)
+			- truetype (ttf)
+			- embedded-opentype
+			- truetype-aat (Apple Advanced Typography)
+			- svg
+			*/
+			font-weight: normal;
+			font-style: normal;
+		}
 		
 		@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
@@ -18,7 +33,6 @@
 		#sistema {
 			font: italic bold 3em 'Times New Roman', Times, serif;
 		}
-
 		/*
 		The font property is a shorthand property for:
 		- font-style
@@ -30,7 +44,10 @@
 		*/
 
 		#local {
-			
+			font-style: italic;
+			font-weight: bold;
+			font-size: 5em;
+			font-family: 'UbuntuMono';
 		}
 
 	</style>
@@ -56,9 +73,9 @@
 	<p>
 		Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
 		<br>
-		Exercício anterior <a href="m02e003.html" target="_self" rel="prev">&#11013</a>
+		Exercício anterior <a href="m02e004.html" target="_self" rel="prev">&#11013</a>
 		<br>
-		Próximo exercício <a href="m02e005.html" target="_self" rel="next">&#10145</a>
+		Próximo exercício <a href="m02e006.html" target="_self" rel="next">&#10145</a>
 	</p>
 
 </body>
