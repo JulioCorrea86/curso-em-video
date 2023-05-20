@@ -63,15 +63,11 @@
 		/*pseudo-class para estilizar um link no momento do clique*/
 		a:active { 
 			color: black;
+		}		
+		
+		li::before {
+			content: '➡';
 		}
-
-		li {
-			text-decoration: none;
-		}
-			
-			li::before {
-			content: '&#10145';
-			}
 
 		li::after {
 			content: '⬅';
