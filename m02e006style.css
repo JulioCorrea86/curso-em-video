@@ -7,22 +7,27 @@ class em HTML é . em CSS
 */
 
 body {
-	background-color: rgb(192, 240, 210);
+	background-color: #BAD8E6;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
-	color: rgb(0, 88, 0);
+	color: #315261;
 }
 
 h3#principal {
 	text-align: center;
-	background-color: rgb(0, 88, 0);
+	background-color: #315261);
 	color: white;
 }
 
 h4 {
-	color: rgb(22, 151, 22);
+	color: #5892AD;
+}
+
+p {
+	text-align: justify;
+	color: #2b3235;
 }
 
 
