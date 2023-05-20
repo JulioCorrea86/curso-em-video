@@ -50,21 +50,33 @@
 			text-decoration: none;
 		}
 
-		a:visited { /*pseudo-class para estilizar um link que já foi visitado*/
+		/*pseudo-class para estilizar um link que já foi visitado*/
+		a:visited { 
 			color: rgb(118, 145, 196);
 		}
 
 		a:hover {
 			text-decoration: underline;
-			color: rgb(116, 116, 116);
+			color: rgb(179, 179, 179);
 		}
 
-		a:active { /*pseudo-class para estilizar um link no momento do clique*/
+		/*pseudo-class para estilizar um link no momento do clique*/
+		a:active { 
 			color: black;
 		}
 
+<<<<<<< HEAD
+		li {
+			text-decoration: none;
+		}
+			
+			li::before {
+			content: '&#10145';
+			}
+=======
 		li::before {
 			content: '➡';
+>>>>>>> 1213e19ee6ed507cd1bc89f5cf2c5d56efa187c8
 		}
 
 		li::after {
