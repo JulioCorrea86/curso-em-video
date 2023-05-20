@@ -63,6 +63,19 @@
 			color: black;
 		}
 
+		li::before {
+			content: '&#10145';
+		}
+
+		li::after {
+			content: '&#11013';
+		}
+
+		.importante {
+			background-color: tomato;
+			color: white;
+		}
+
 		/*
 		- Pseudo-classes são palavras que definem estados de elementos dentro da HTML.
 		- Pseudo-elemento elepode agir nas classes no elementos no ids, eles mexem diretamente no conteúdo periférico do elemento. 
@@ -76,7 +89,7 @@
 
 	<h1>Pseudo-classes em CSS</h1>
 	<p>
-		Treinando pseudo-classes no CSS3: hover, link visitado e link clicado.
+		Treinando pseudo-classes e pseudo-element no CSS3: hover, link visitado, link clicado e mais.
 
 	</p>
 
@@ -103,7 +116,7 @@
 	<ul>
 		<li><a href="https://github.com/JulioCorrea86" target="_blank" rel="external">Meu Github</a></li>
 		<li><a href="https://www.linkedin.com/in/julio-correa-80491846" target="_blank" rel="external">Meu LinkedIn</a></li>
-		<li><a href="https://juliocorrea86.github.io/curso-em-video-html5-css3/" target="_blank" rel="next">Meu Portifólio</a></li>
+		<li><a href="https://juliocorrea86.github.io/curso-em-video-html5-css3/" target="_blank" rel="next" class="importante">Meu Portifólio</a></li>
 	</ul>
 
 
