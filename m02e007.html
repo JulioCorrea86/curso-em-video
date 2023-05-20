@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pseudo-classes em CSS - Módulo 2</title>
+
+	<style>
+		div {
+			background-color: lightgrey;
+			text-align: center;
+			height: 200px;
+			width: 200px;
+			border: 1px solid black;
+			display: inline-block; /*para deoixar conteúdo na mesma linha*/
+		}
+
+		div:hover {
+			background-color: yellow;
+		}
+
+		div#d1 > p {
+			display: none;
+		}
+
+		div:hover > p {
+			display: block;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<h1>Pasudo-classes em CSS</h1>
+	<p>
+		Teste para verificar se tds os parágrafos estão ocultos.
+
+	</p>
+
+	<hr>
+
+	<h2>Resolução do exercício</h2>
+
+	<div id="d1">
+		01
+		<p>Teste hover 01</p>
+	</div>
+	
+	<div id="d2">
+		02
+		<p>Teste hover 02</p>
+	</div>
+	
+	<div id="d3">
+		03
+		<p>Teste hover 03</p>
+	</div>
+
+
+	
+</body>
+</html>
