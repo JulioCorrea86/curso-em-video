@@ -2,8 +2,8 @@
 
 
 /*
-id em HTML é # em CSS
-class em HTML é . em CSS
+- id em HTML é # em CSS (só pode um elemento no documento HTML)
+- class em HTML é . em CSS (pode vários elementos no documento HTML)
 */
 
 body {
@@ -25,9 +25,26 @@ h4 {
 	color: #5892AD;
 }
 
+.basico {
+	color: #5892AD;
+
+}
+
+.intermediario {
+	color: #ada458;
+}
+
+.avancado {
+	color: #ad5858;
+}
+
 p {
 	text-align: justify;
 	color: #2b3235;
+}
+
+.destaque {
+	background-color: #58ad5f;
 }
 
 
