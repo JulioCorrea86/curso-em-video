@@ -15,6 +15,10 @@
             margin: auto; /*margin: auto; centraliza o elemento na página independente do tamanho da tela*/
         }
 
+        .enunciado {
+            margin: 10.72px;
+        }
+
         header {
             background-color: white;
             padding: 10px;
@@ -27,6 +31,7 @@
             margin: 0px;
             width: 100%;
             text-align: center;
+            box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.288);
         }
 
         nav > a {
@@ -48,7 +53,7 @@
             box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.288);
             /* shorthand: delocamento horizontal, deslocamento vertical, espalhamento, cor */
             border-radius: 10px 10px 10px 10px;
-            /* shorthand: border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius */
+            /* shorthand: border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius. Border-radius tb pode ser usado com medida em % */
         }
 
         article {
@@ -61,7 +66,7 @@
         }
 
         p.menurodape {
-            margin-left: 30px;
+            margin: 10.72px;
         }
         
         footer {
@@ -74,7 +79,7 @@
         }
 
         footer > p {
-            margin: 0px;
+            margin: 10.72px;
         }
 
     </style>
@@ -83,8 +88,8 @@
 
 <body>
 
-    <h1>Caixas com sombras e vértices arredondados</h1>
-    <p>
+    <h1 class="enunciado">Caixas com sombras e vértices arredondados</h1>
+    <p class="enunciado">
         Crie sombras em caixas utilizando CSS3, utilizando os parâmetros da shorthand box-shadow com o assistente interno do DevTools para ajudar na configuração de sombras. Além disso, crie bordas com vértices arredondados.
     </p>
 
