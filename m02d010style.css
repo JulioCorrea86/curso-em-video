@@ -29,7 +29,7 @@ main {
     margin: auto;
 }
 
-main > h1.h2 {
+main > h1 h2 {
     font-family: 'idroid';
 }
 
