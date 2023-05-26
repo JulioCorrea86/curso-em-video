@@ -26,6 +26,7 @@ header {
 
 main {
     background-color: white;
+    width: 1024px;
 }
 
 main > h1.h2 {
