@@ -16,7 +16,6 @@
 
 body {
     background-color: rgb(166, 236, 193);
-    margin: auto;
 }
 
 header {
@@ -27,6 +26,7 @@ header {
 main {
     background-color: white;
     width: 1024px;
+    margin: auto;
 }
 
 main > h1.h2 {
