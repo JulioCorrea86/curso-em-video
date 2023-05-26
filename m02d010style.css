@@ -20,7 +20,8 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, rgb(0, 133, 0), rgb(0, 104, 0));
-    color: white;    
+    color: white;  
+    text-align: center;  
 }
 
 main {
