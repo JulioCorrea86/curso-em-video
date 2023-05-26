@@ -15,13 +15,17 @@
 
 body {
     background-color: rgb(166, 236, 193);
-    width: auto;
+    margin: auto;
 }
 
 header {
     background-image: linear-gradient(to bottom, rgb(58, 177, 58), rgb(0, 104, 0));
     color: white;
     text-align: center;
+}
+
+main > h1.h2 {
+    font-family: 'idroid';
 }
 
 
