@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, rgb(58, 177, 58), rgb(0, 104, 0));
+    background-image: linear-gradient(to bottom, rgb(0, 133, 0), rgb(0, 104, 0));
     color: white;    
 }
 
@@ -29,9 +29,15 @@ main {
     margin: auto;
 }
 
-main > h1 h2 {
+main > h1 {
     font-family: 'idroid';
+    color: rgb(0, 104, 0);
+    background-image: linear-gradient(to left, rgb(208, 255, 208), white);
 }
 
+main > h2 {
+    font-family: 'idroid';
+    color: rgb(0, 104, 0);
+}
 
 
