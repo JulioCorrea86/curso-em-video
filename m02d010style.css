@@ -60,8 +60,8 @@ main > h2 {
 
 main > a {
     color: rgb(0, 104, 0);
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 main > a:hover {
