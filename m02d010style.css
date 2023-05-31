@@ -91,7 +91,7 @@ main > a:hover {
     text-decoration: underline;
 }
 
-main > picture {
+picture > img {
     display: block;
     margin: 10px auto;
 }
