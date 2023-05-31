@@ -81,7 +81,7 @@ main > p {
     padding: 0px 20px;
 }
 
-main > p > a {
+main > a {
     color: rgb(0, 104, 0);
     font-weight: bold;
     text-decoration: none;
@@ -91,7 +91,7 @@ main > a:hover {
     text-decoration: underline;
 }
 
-main > picture > img {
+main > picture {
     display: block;
     margin: 10px auto;
 }
