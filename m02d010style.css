@@ -65,12 +65,20 @@ main {
 main > h1 {
     font-family: 'idroid';
     color: rgb(0, 104, 0);
+    margin: 0px;
+    padding: 20px;
 }
 
 main > h2 {
     font-family: 'idroid';
     color: rgb(0, 104, 0);
     background-image: linear-gradient(to right, rgb(208, 255, 208), white);
+    margin: 20px;
+}
+
+main > p {
+    margin: 15px;
+    padding: 0px 20px;
 }
 
 main > a {
