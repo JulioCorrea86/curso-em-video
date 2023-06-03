@@ -101,7 +101,8 @@ main h2 {
 }
 
 main p {
-    margin: 5px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 main a {
