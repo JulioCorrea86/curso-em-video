@@ -64,7 +64,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--cor1);
+    background-color: var(--cor2);
+    color: var(--cor5);
     text-decoration: underline;
 }
 
@@ -92,7 +93,7 @@ main h2 {
 }
 
 main a {
-    color: var(--cor5);
+    color: var(--cor4);
     font-weight: bold;
     text-decoration: none;
 }
