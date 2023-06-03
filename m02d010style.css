@@ -98,10 +98,11 @@ main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
     background-image: linear-gradient(to right, #83e1ad, white);
+    margin-top: 30px;
 }
 
 main p {
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
