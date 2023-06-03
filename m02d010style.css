@@ -151,6 +151,12 @@ main aside p {
     padding: 10px 20px;
 }
 
+main aside ul {
+    padding-left: 35px;
+    padding-right: 35px;
+    display: inline-block;
+}
+
 
 footer {
     background-color: var(--cor5);
