@@ -143,6 +143,7 @@ main aside {
     background-color: var(--cor1);
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.199);
     border-radius: 8px;
+    padding-bottom: 5px;
     margin-top: 10px;
     margin-bottom: 30px; 
 }
