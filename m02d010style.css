@@ -113,8 +113,9 @@ main img .pequena {
     margin: auto;
 }
 
-main .video {
-    margin: 10px auto;
+main .bgvideo {
+    margin: auto;
+    padding: 10px;
     background-color: var(--cor5);
 }
 
@@ -127,7 +128,7 @@ main aside {
 main aside h3 {
     border-radius: 8px 8px 0px 0px;
     background-color: var(--cor4);
-    color: white;
+    color: red;
     font-weight: bold;
 }
 
