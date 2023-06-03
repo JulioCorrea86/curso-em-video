@@ -154,9 +154,7 @@ main aside p {
 main aside ul {
     padding-left: 35px;
     padding-right: 35px;
-    display: inline-block;
 }
-
 
 footer {
     background-color: var(--cor5);
