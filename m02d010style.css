@@ -100,6 +100,10 @@ main h2 {
     background-image: linear-gradient(to right, #83e1ad, white);
 }
 
+main p {
+    margin: 5px 15px;
+}
+
 main a {
     color: var(--cor4);
     font-weight: bold;
