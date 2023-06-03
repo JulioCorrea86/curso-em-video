@@ -88,9 +88,6 @@ main h2 {
     background-image: linear-gradient(to right, #83e1ad, white);
 }
 
-main > p {
-}
-
 main a {
     color: var(--cor5);
     font-weight: bold;
@@ -138,13 +135,13 @@ footer {
     text-align: center;
 }
 
-footer > p > a {
+footer p a {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-footer > p > a:hover {
+footer p a:hover {
     text-decoration: underline;
 }
 
