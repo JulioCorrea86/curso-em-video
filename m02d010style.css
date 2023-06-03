@@ -55,6 +55,8 @@ header p {
 
 nav {
     background-color: var(--cor5);
+    padding: 0px 5px 0px 5px;
+    margin: 0px 10px 0px 10px;
 }
 
 nav a {
@@ -66,7 +68,6 @@ nav a {
 nav a:hover {
     background-color: var(--cor2);
     color: var(--cor5);
-    text-decoration: underline;
 }
 
 main {
@@ -146,7 +147,6 @@ footer p {
 
 footer a {
     color: white;
-    font-weight: bold;
     text-decoration: none;
 }
 
