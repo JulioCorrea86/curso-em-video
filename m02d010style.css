@@ -135,7 +135,6 @@ main aside {
     background-color: var(--cor1);
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.199);
     border-radius: 8px;
-    padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -145,6 +144,7 @@ main aside h3 {
     background-color: var(--cor4);
     color: white;
     font-weight: bold;
+    padding: 5px;
 }
 
 footer {
