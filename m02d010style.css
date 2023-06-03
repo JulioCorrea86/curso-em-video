@@ -101,17 +101,13 @@ main > a:hover {
     text-decoration: underline;
 }
 
-picture > img {
-    display: block;
-}
-
 main > img {
     width: 100%;
     display: block;
-    margin: 10px auto;
+    margin: auto;
 }
 
-main img.pequena {
+main > img.pequena {
     width: 40%;
     display: block;
     margin: auto;
