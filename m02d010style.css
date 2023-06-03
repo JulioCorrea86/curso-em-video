@@ -39,6 +39,7 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, #1a5c37, #063d1e);
+    padding: 20px;
 }
 
 header h1 {
