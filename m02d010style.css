@@ -47,7 +47,7 @@ header > h1 {
 }
 
 header > p {
-    color: white;
+    color: red;
 }
 
 nav {
@@ -84,7 +84,7 @@ main h1 {
 
 main > h2 {
     font-family: var(--fonte-android);
-    color: var(--cor4);
+    color: red;
     background-image: linear-gradient(to right, #83e1ad, white);
 }
 
