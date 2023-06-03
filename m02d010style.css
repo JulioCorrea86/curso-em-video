@@ -39,7 +39,6 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, #1a5c37, #063d1e);
-    padding: 20px;
 }
 
 header h1 {
@@ -47,15 +46,18 @@ header h1 {
     color: white;
     text-align: center;
     size: 3em;
+    padding: 20px;
 }
 
 header p {
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
 nav {
     background-color: var(--cor5);
+    padding: 5px;
 }
 
 nav a {
