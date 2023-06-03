@@ -82,22 +82,22 @@ main h1 {
     color: var(--cor5);
 }
 
-main > h2 {
+main h2 {
     font-family: var(--fonte-android);
-    color: red;
+    color: var(--cor4);
     background-image: linear-gradient(to right, #83e1ad, white);
 }
 
 main > p {
 }
 
-main > a {
+main a {
     color: var(--cor5);
     font-weight: bold;
     text-decoration: none;
 }
 
-main > a:hover {
+main a:hover {
     text-decoration: underline;
 }
 
@@ -113,19 +113,18 @@ main > img.pequena {
     margin: auto;
 }
 
-.video {
+main .video {
     margin: 10px auto;
     background-color: var(--cor5);
 }
 
-aside {
-    margin: 10px;
+main aside {
     background-color: var(--cor1);
     box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.199);
     border-radius: 8px;
 }
 
-aside > h3 {
+main aside h3 {
     border-radius: 8px 8px 0px 0px;
     background-color: var(--cor4);
     color: white;
