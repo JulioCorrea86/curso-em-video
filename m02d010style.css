@@ -107,7 +107,7 @@ main img {
     margin: auto;
 }
 
-main > img.pequena {
+main img.pequena {
     width: 40%;
     display: block;
     margin: auto;
