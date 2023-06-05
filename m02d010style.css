@@ -61,6 +61,8 @@ header p {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 30px;
+    max-width: 400px;
+    margin: auto;
 }
 
 nav {
@@ -73,8 +75,8 @@ nav a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px;
-    margin: 0px 5px;
+    padding: 5px;
+    /*margin: 0px 5px;*/
     border-radius: 5px;
 }
 
