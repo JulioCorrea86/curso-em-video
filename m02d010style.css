@@ -186,7 +186,7 @@ main aside ul {
     list-style-type: '\2714\00A0\00A0'; /*2714 é código do emojio chceck e 00A0 é um espaçamento sem quebra. esses códigos não são compatíveis com todo navegador*/
     list-style-position: inside; /*inside deixa os bullets points dentro da caixa em que ele está inserido*/
     columns: 2;
-    text-align: center;
+    margin: auto
 }
 
 footer {
