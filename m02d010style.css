@@ -62,7 +62,7 @@ header p {
 nav {
     background-color: var(--cor5);
     padding: 10px;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 nav a {
@@ -157,19 +157,18 @@ main .bgvideo {
 
 main aside {
     background-color: var(--cor1);
-    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.199);
+    padding: 10px;
     border-radius: 8px;
-    padding-bottom: 5px;
-    margin-top: 10px;
-    margin-bottom: 30px; 
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.199);
 }
 
 main aside h3 {
-    border-radius: 8px 8px 0px 0px;
     background-color: var(--cor4);
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px;
+    margin: -10px, -10px 0px -10px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 main aside p {
@@ -177,18 +176,17 @@ main aside p {
 }
 
 main aside ul {
-    padding-left: 35px;
-    padding-right: 35px;
+    list-style-type: '\2714\00A0\00A0'; /*2714 é código do emojio chceck e 00A0 é um espaçamento sem quebra. esses códigos não são compatíveis com todo navegador*/
+    list-style-position: inside; /*inside deixa os bullets points dentro da caixa em que ele está inserido*/
+    columns: 2;
 }
 
 footer {
     background-color: var(--cor5);
-    padding: 15px;
-}
-
-footer p {
     color: white;
     text-align: center;
+    font-size: 0.8em;
+    padding: 15px;
 }
 
 footer a {
@@ -198,5 +196,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color: var(--cor1);
 }
 
