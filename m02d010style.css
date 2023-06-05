@@ -148,8 +148,7 @@ main img.pequena {
 
 main .bgvideo {
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px -20px;
     padding: 40px;
     background-color: var(--cor5);
     text-align: center;
