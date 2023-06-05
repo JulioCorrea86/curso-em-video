@@ -170,12 +170,16 @@ main aside h3 {
     color: white;
     font-weight: bold;
     padding: 10px;
-    margin: -10px, -10px 0px -10px;
+    margin: -10px -10px 0px -10px;
     border-radius: 8px 8px 0px 0px;
 }
 
 main aside p {
     padding: 10px 20px;
+}
+
+aside a {
+    background-color: var(--cor3);
 }
 
 main aside ul {
