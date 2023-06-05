@@ -188,10 +188,6 @@ main aside ul {
     columns: 2;
 }
 
-main aside li {
-    margin: auto;
-}
-
 footer {
     background-color: var(--cor5);
     color: white;
