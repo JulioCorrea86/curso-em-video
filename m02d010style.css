@@ -101,12 +101,14 @@ main {
 main h1 {
     font-family: var(--fonte-android);
     font-size: 2em;
+    font-weight: normal;
     color: var(--cor5);
     text-align: left;
 }
 
 main h2 {
     font-family: var(--fonte-android);
+    font-weight: normal;
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), transparent);
     margin-top: 30px;
@@ -152,12 +154,20 @@ main img.pequena {
     margin: auto;
 }
 
-main div.bgvideo {
-    margin: auto;
+main div.video {
+    background-color: var(--cor5);
     margin: 10px -20px;
     padding: 20px;
-    background-color: var(--cor5);
-    text-align: center;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+main div.viedo iframe {
+    position: absolute; /*o position absolute é configurado com position: top e position: left. Além disso é possível configurar width e height.*/
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;  
 }
 
 main aside {
