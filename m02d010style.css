@@ -162,7 +162,7 @@ main div.video {
     position: relative;
 }
 
-main div.viedo iframe {
+main div.video iframe {
     position: absolute; /*o position absolute é configurado com position: top e position: left. Além disso é possível configurar width e height.*/
     top: 5%;
     left: 5%;
