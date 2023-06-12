@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical - Módulo 3</title>
+    <link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
+
+    <style>
+        #container {
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url('imagens/m03e022target001.png');
+            background-size: 100% 100%;
+            
+            position: relative;
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url('imagens/m03e022target001.png');
+            background-size: 100% 100%;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* 
+        Passo a passo para centralizar elementos na vertical e horizontal:
+            1. colocar a caixa referência da centralização com o parâmetro "position: relative"
+            2. colocar o elemento que será centralizado com o parâmetro "position: absolute"
+            3. mexer os eixos "left e top" para 50% (o ponto referência sempre é canto superior esquerdo. O elemento será alinhado com o canto superior esquerdo ao centro do elemento relativo que está fixo)
+            4. aplicar o parâmetro "transform: translate" para -50%, ou seja, mover o elemento 50% pra esquerda e 50% para cima
+        */
+
+    </style>
+
+</head>
+<body>
+
+    <section id="container">
+
+        <article id="conteudo">
+
+        </article>
+
+    </section>
+
+</body>
+</html>
