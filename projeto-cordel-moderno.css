@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root {
-    --fonte-padrao: 'Sriracha', cursive;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-conteudo: 'Sriracha', cursive;
     --fonte-destaque: 'Passion One', cursive;
-    --fonte-menor: Verdana, Geneva, Tahoma, sans-serif;
-}
+    }
 
 * {
     margin: 0px;
@@ -14,21 +14,27 @@
     font-size: 1em;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--fonte-padrao);
+}
+
 header {
-    padding: 40px 0px 60px 0px;
     background-color: black;
     color: white;
     text-align: center;
+    padding: 40px 0px 60px 0px;
 }
 
-h1 {
+header > h1 {
     font-family: var(--fonte-destaque);
-    font-size: 8.5em;
-    font-variant: small-caps;
+    font-size: 10vw;
+    font-variant: small-caps; /* outra forma de colocar texto em caixa alta é usar text-transform: uppercase; */
 }
 
 header > p {
-    font-family: var(--fonte-menor);
+    font-family: var(--fonte-padrao);
     color: white;
 }
 
@@ -42,12 +48,47 @@ a:hover {
 }
 
 section {
-    padding: 50px 0px 50px 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-conteudo);
+    font-size: 3.5vw;
 }
 
-main p {
-    font-family: var(--fonte-padrao);
-    font-size: 3em;
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.background {
+    background-color: rgb(99, 99, 99);
+    color: white;
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.425);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section.background > p {
+    background-color: rgba(0, 0, 0, 0.479);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#bg01 {
+    background-image: url('imagens/projeto-cordel-background001.jpg');
+    background-position: right center;
+}
+
+section#bg02 {
+    background-image: url('imagens/projeto-cordel-background002.jpg');
+    background-position: right center;
 }
 
 footer {
@@ -57,7 +98,7 @@ footer {
 }
 
 footer > p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
     color: white;
 }
 
