@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Tabela em HTML - Módulo 3</title>
+    <link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table {
+            border: 3px solid blue;
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+        }
+
+        tr {
+            height: 40px;
+        }
+
+        tr.destaquelinha {
+            background-color: magenta;
+        }
+
+        td {
+            border: 1px solid darkgrey;
+        }
+
+        td.destaquedado {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Como criar Tabela em HTML</h1>
+            <p>
+                Primeiros passos para criar uma tabela de dados em HTML.
+            </p>
+        <hr>
+        <h2>Resolução do exercício</h2>
+
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+                <td>D1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+                <td>D2</td>
+            </tr>
+            <tr class="destaquelinha">
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+                <td>D3</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td class="destaquedado">C4</td>
+                <td>D4</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m03e022e.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m03e024.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
+
+</body>
+</html>
