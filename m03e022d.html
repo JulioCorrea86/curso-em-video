@@ -23,16 +23,35 @@
             */
             background: black url('imagens/m03e022wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
+            margin: 0px;
         }
 
         main {
             background-color: white;
-            max-width: 400px;
+            max-width: 500px;
             border: 2px solid blue;
             border-radius: 10px;
             padding: 10px;
             margin: auto;
+            margin-top: 20px;
+        }
 
+        h1 {
+            text-align: center;
+        }
+
+        main > p {
+            text-align: justify;
+        }
+
+        p.menurodape {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        p > a {
+            color: white;
         }
     </style>
     
@@ -40,7 +59,7 @@
 <body>
 
     <main>
-        <h1>Teste com iamgem de fundo fixo</h1>
+        <h1>Teste com imagem de fundo fixo</h1>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quidem fugiat enim ratione. Sunt quae ipsum, sit veritatis quasi ab, eaque pariatur ut, suscipit et eos ad? Ducimus, suscipit aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem unde itaque velit necessitatibus error quos. Tempora, aut error dolorum eligendi quod, obcaecati, animi dolorem delectus debitis quia rerum magni placeat.
         </p>
@@ -112,6 +131,16 @@
 
 
     </main>
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m03e022c.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m03e022e.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
     
 </body>
 </html>
