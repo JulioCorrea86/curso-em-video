@@ -15,7 +15,6 @@
             border: 3px solid blue;
             border-collapse: collapse;
             width: 500px;
-            text-align: center;
         }
 
         tr {
@@ -28,11 +27,17 @@
 
         td {
             border: 1px solid darkgrey;
-            padding: 10px;
+            padding: 20px;
+            text-align: center; /* alinhamento horizontal e automático*/
+            vertical-align: middle; /* alinhamento vertical. Tb usa propriedades top ou bottom*/
         }
 
         td.destaquedado {
             background-color: yellow;
+        }
+
+        td.alinhamento {
+            text-align: right;
         }
 
     </style>
@@ -63,7 +68,7 @@
             </tr>
             <tr class="destaquelinha">
                 <td>A3</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam dolores explicabo eius possimus necessitatibus accusamus blanditiis eaque hic ab similique sed, quo quod vero officiis impedit. Atque, minima delectus!</td>
+                <td class="alinhamento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam dolores explicabo eius possimus necessitatibus accusamus blanditiis eaque hic ab similique sed, quo quod vero officiis impedit. Atque, minima delectus!</td>
                 <td>C3</td>
                 <td>D3</td>
             </tr>
