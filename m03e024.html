@@ -16,7 +16,9 @@
         table {
             width: 800px;
             border-collapse: collapse;
-            position: relative; /* parâmetro usado em conjunto com "position: sticky" para poder fixar o cabeçalho da tabela */
+            /* parâmetro usado para juntar as bordas das células, que por padrão ficam smente em volta do dado */
+            position: relative;
+            /* parâmetro usado em conjunto com "position: sticky" para poder fixar o cabeçalho da tabela */
         }
 
         caption {
@@ -26,12 +28,19 @@
             background-color: gray;
         }
 
-        thead > tr > th {
-            position: sticky; /* parâmetro para fixar o elemento, neste caso aplicado ao cabeçalho da tabela*/
-            top: -1px; /* configuração de -1px pq com 0px não ficou colado 100% no topo da página*/            
+        thead>tr>th {
+            position: sticky;
+            /* parâmetro para fixar o elemento, neste caso aplicado ao cabeçalho da tabela*/
+            top: -1px;
+            /* configuração de -1px pq com 0px não ficou colado 100% no topo da página*/
         }
 
-        th, td {
+        thead>tr>th>small {
+            font-size: 0.65em;
+        }
+
+        th,
+        td {
             border: 1px solid grey;
             padding: 5px;
         }
@@ -48,18 +57,22 @@
             text-align: right;
         }
 
-        tbody > tr:nth-child(odd) {
+        tbody>tr:nth-child(odd) {
             /* odd é ímpar em inglês. Também pode ser usado o parâmetro 2n-1 */
             background-color: white;
         }
 
-        tbody > tr:nth-child(even) {
+        tbody>tr:nth-child(even) {
             /* even é par em inglês. Também pode ser usado o parâmetro 2n */
             background-color: rgb(222, 235, 240);
         }
 
-        tfoot > tr {
+        tfoot>tr {
             background-color: lightgrey;
+        }
+
+        tfoot>tr>th {
+            text-align: right;
         }
     </style>
 
@@ -74,7 +87,7 @@
         </p>
         <hr>
         <h2>Resolução do exercício</h2>
-        <!--
+            <!--
                 Anatomia para tabelas grandes:
                     table
                         caption (legenda da tabela)
@@ -90,18 +103,23 @@
                             tr - linha
                                 td - dado
                                 th - cabeçalho da linha
-             -->
+            -->
+
         <table>
+
             <caption>População das Unidades Federativas</caption>
+
             <thead>
                 <th scope="col">Posição</th>
                 <th scope="col" style="width: 130px;">Unidade federativa</th>
-                <th scope="col">População <small>(Censo de 2010)</small></th>
-                <th scope="col">População <small>(Prévia 2022)</small></th>
+                <th scope="col">População <br> <small>(Censo de 2010)</small></th>
+                <th scope="col">População <br> <small>(Prévia 2022)</small></th>
                 <th scope="col">Mudança</th>
                 <th scope="col">% da população total</th>
-                <th scope="col">País comparável <small>(habitantes)</small></th>
+                <th scope="col">País comparável <br> <small>(Habitantes)</small></th>
+                <!-- Os parâmetros scope="col" e scope="row" são utilizados para semântica do código, indicando se o título é uma coluna ou uma linha. -->
             </thead>
+
             <tbody>
                 <tr>
                     <td>1</td>
@@ -347,89 +365,91 @@
                     <td>Montenegro (649.335)</td>
                 </tr>
             </tbody>
+
+
             <tfoot>
                 <tr>
-                    <th scope="row">Total</th>
-                    <td></td>
+                    <th scope="row" colspan="2">Total</th>
                     <td class="numero"> <strong>190.755.799</strong></td>
                     <td class="numero"> <strong>207.883.699</strong></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="3"></td>
+                    <!-- colspan e rowspan é usado para mesclar coluna e célula de tabela respectivamente -->
+                    <!-- Os parâmetros scope="col" e scope="row" são utilizados para semântica do código, indicando se o título é uma coluna ou uma linha. -->
                 </tr>
             </tfoot>
         </table>
+
         <h2>Texto para testar o cabeçalho fixo da tabela na rolagem da página</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
-            ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
-            consequuntur.
-            Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
-            Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
-            perferendis?
-            Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
-            facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
-            Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
-            nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
-            ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
-            consequuntur.
-            Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
-            Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
-            perferendis?
-            Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
-            facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
-            Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
-            nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
-            ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
-            consequuntur.
-            Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
-            Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
-            perferendis?
-            Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
-            facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
-            Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
-            nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
-            ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
-            consequuntur.
-            Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
-            Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
-            perferendis?
-            Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
-            facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
-            Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
-            nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
-            ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
-            consequuntur.
-            Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
-            Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
-            perferendis?
-            Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
-            facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
-            Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
-            nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
-            ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
-            consequuntur.
-            Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
-            Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
-            perferendis?
-            Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
-            facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
-            Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
-            nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
-            ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
-            consequuntur.
-            Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
-            Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
-            perferendis?
-            Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
-            facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
-            Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
-            nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
+                ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
+                consequuntur.
+                Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
+                Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
+                perferendis?
+                Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
+                facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
+                Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
+                nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
+                ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
+                consequuntur.
+                Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
+                Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
+                perferendis?
+                Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
+                facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
+                Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
+                nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
+                ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
+                consequuntur.
+                Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
+                Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
+                perferendis?
+                Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
+                facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
+                Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
+                nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
+                ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
+                consequuntur.
+                Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
+                Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
+                perferendis?
+                Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
+                facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
+                Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
+                nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
+                ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
+                consequuntur.
+                Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
+                Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
+                perferendis?
+                Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
+                facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
+                Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
+                nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
+                ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
+                consequuntur.
+                Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
+                Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
+                perferendis?
+                Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
+                facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
+                Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
+                nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eius debitis blanditiis, facere ea repellendus
+                ipsa autem fuga sint consequuntur assumenda aut? Harum expedita repellat dolorem temporibus dolor culpa
+                consequuntur.
+                Nisi qui, rem sit dolorem voluptatum provident et dolore? Molestias nemo consectetur aperiam unde nesciunt?
+                Nisi, sit ex. Porro quos quibusdam minima odit quasi repellendus dolorem mollitia nostrum assumenda
+                perferendis?
+                Nisi nobis aut nostrum fugiat esse, veniam sint a rem consectetur sed nemo ab velit voluptatibus tempora
+                facere dolore temporibus magnam in iusto excepturi perferendis cum architecto! Consequuntur, nihil at.
+                Veritatis ut blanditiis, architecto ipsa totam quae harum beatae eaque pariatur quos velit iure saepe, et
+                nesciunt ipsam? Tempora unde eius obcaecati. A quis suscipit sequi quod sit nam at.</p>
     </main>
 
     <footer>
