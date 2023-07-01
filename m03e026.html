@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando colunas com colgroup - Módulo 3</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            background-color: darkcyan;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: lightgrey;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        .colnome, .colsexo {
+            background-color: lightsalmon;
+        }
+
+        .coldestaque {
+            background-color: antiquewhite;
+        }
+
+        tfoot {
+            background-color: lightgoldenrodyellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Agrupando colunas com colgroup</h1>
+    <p>
+        Aprenda como isolar colunas para configurações de estilo em grupo.
+    </p>
+    <hr>
+    <h2>Resolução do exercício</h2>
+
+    <table>
+
+        <colgroup> <!-- colgroup é usado para agrupar coluna e personalizar de forma simplificada -->
+            <col class="colnome">
+            <col class="colsexo">
+            <col class="coldestaque" span="2">
+            <col>
+        </colgroup>
+        
+        <caption>Cadastro de clientes</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4"><small>*Dados atualizados em julho de 2023.</small></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m03e025.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m03e025.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
