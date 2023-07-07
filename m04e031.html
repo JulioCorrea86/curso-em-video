@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrames com proteção externa - Módulo 4</title>
+    <link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Meu site principal</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur doloribus, commodi aperiam quaerat magni vel corporis nemo. Praesentium laborum magnam, atque dolorum tempora corrupti. Voluptas incidunt vero labore dignissimos quaerat?</p>
+
+    <iframe src="m04e031a.html" sandbox="sandbox" referrerpolicy="no-referrer"> 
+        <!-- 
+            sandbox="sandbox" - não permite sites externos capturar dados de usuários dentro do iframe.
+            referrerpolicy="no-referrer" - não faz referência do conteúdo do iframe para capturar dados de navegação
+            **estas 2 configurações liga o máximo de segurança para carregar sites externos no iframe  
+        -->
+        Seu navegador não é compatível com isso...<!-- mensagem de erro que carrega somente se o iframe não for compatível com o navegador do usuário -->
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime totam odio nobis vel delectus porro dolorem, obcaecati quibusdam a vitae quisquam, tempora natus! Aperiam ad odit, temporibus quas rem iste.</p>
+
+
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m04e030.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m04e032.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
+
+
+</body>
+</html>
