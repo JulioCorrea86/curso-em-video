@@ -40,3 +40,31 @@ iframe#tela {
     width: 265px;
     height: 470px;
 }
+
+section#midias-sociais nav {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-120%, -50%);
+}
+
+section#midias-sociais img {  
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+    box-sizing: border-box;
+}
+
+section#midias-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.774);
+    transform: translate(2px, -2px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.623);
+    transition: transform 0.15s;
+}
+
+section#midias-sociais li {
+    list-style-type: none;
+    text-align: right;
+}
+
