@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com elementos number, month, date e time - Módulo 4</title>
+</head>
+<body>
+
+    <h1>Formulário com elementos number, month, date e time</h1>
+    <p>
+        Aprendendo novas configurações de formulário em HTML.
+    </p>
+
+    <hr>
+
+    <h2>Resolução do exercício</h2>
+
+    <form action="m04e033cadastro.php" method="get" autocomplete="on">
+        
+        <p>
+            <label for="inome">Nome:*</label>
+            <input type="text" name="nome" id="inome" placeholder="Nome completo" required autocomplete="name" minlength="2" maxlength="30">
+        </p>
+
+        <p>
+            <label for="imedia">Média:*</label>
+            <input type="number" name="media" id="imedia" placeholder="0 a 10" required min="0" max="10" step="0.1">
+                <!--
+                    1. Em caso de caixa numérica usa o min e max (sem o length) para limitar os números a serem preenchidos;
+                    2. Para aceitar números decimais usar o step para configurar a variação dos números;
+                -->
+        </p>
+
+        <p>
+            <label for="imes">Período letivo:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <p>
+            <label for="ihora">Horário da prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+
+
+
+<footer>
+    <p class="menurodape">
+        Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+        <br>
+        Exercício anterior <a href="m04e033.html" target="_self" rel="prev">&#11013</a>
+        <br>
+        Próximo exercício <a href="m04e033b.html" target="_self" rel="next">&#10145</a>
+    </p>
+</footer>
+    
+</body>
+</html>
