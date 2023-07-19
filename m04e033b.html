@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com telefone e e-mail</title>
+</head>
+<body>
+
+    <h1>Formulário com telefone e e-mail</h1>
+    <p>
+        Atributos de formulário para controle de e-mail e telefone.
+    </p>
+
+    <hr>
+
+    <h2>Resolução do exercício</h2>
+
+    <form action="m04e033cadastro.php" method="get" autocomplete="on">
+
+        <fieldset> <!-- agrupa os campos de um formulário para separar por assuntos, por exemplo -->
+            <legend>Dados pessoais</legend> <!-- inclui legenda no agrupamento dos campos -->
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo" required autocomplete="name" minlength="2" maxlength="30">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" placeholder="(xx)xxxx-xxxx" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+                    <!--
+                        Estudar mais sobre RegEx (Regular Expressions - Expressões Regulares)
+                            1. são aplicados dentro do atributo pattern
+                            2. toda regex começa com ^ e termina com $
+                            3. no exemplo acima o padrão de telefone ficará com digito de 0 a 9 e só pode colocar 4 digitos antes do hifen e 4 depois do hifen
+                            4. explicação do patter no exemplo:
+                                \( e \) é abrir e fechar parênteses
+                                \d{2} é a representação de 2 dígitos
+                                \d{4,5} pode incluir 4 ou 5 dígitos
+                        Ideal é controlar as validações por javascript ou em php
+                    -->
+            </p>
+        </fieldset>
+
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+
+
+    </form>
+
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m04e033a.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m04e033c.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
+
+    
+</body>
+</html>

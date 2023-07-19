@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com checkbox e radio button - Módulo 4</title>
+</head>
+<body>
+
+    <h1>Formulário com checkbox e radio button</h1>
+    <p>
+        Criar um formulário em HTML com checkbox e radio button.
+
+    </p>
+
+    <hr>
+
+    <h2>Resolução do exercício</h2>
+
+    <form action="m04e033cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="imas" value="M">
+            <label for="imas">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="ifem" value="F">
+            <label for="ifem">Feminino</label>
+            <!-- Para que só possa fazer uma escolha no controle radio, colocar o mesmo name nos inputs -->
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" name="bas" id="ibas"> 
+            <label for="ibas">Basquete</label> <br>
+            
+            <input type="checkbox" name="fut" id="ifut"> 
+            <label for="ifut">Futebol</label> <br>
+            
+            <input type="checkbox" name="futame" id="ifutame"> 
+            <label for="ifutame">Futebol Americano</label> <br>
+            
+            <input type="checkbox" name="box" id="ibox"> 
+            <label for="ibox">Boxe</label>
+        </fieldset>
+
+        <input type="checkbox" name="signin" id="isignin" checked> 
+        <label for="isignin">Desejo receber novidades e promoções</label>
+        <!-- usar o atributo checked para ja vir marcado a opção de checkbox -->
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+
+
+    </form>
+
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m04e033b.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m04e033d.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
