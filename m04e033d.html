@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com elementos color, range e file - Módulo 4</title>
+    <link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Formulário com elementos color, range e file</h1>
+    <p>
+        Aprenda mais elementos input para formulário: color, range e file.
+    </p>
+
+    <hr>
+
+    <h2>Resolução do exercício</h2>
+
+    <form action="m04e033cadastro.php" method="post" autocomplete="on"> <!-- Quando no formulário tiver envio de arquivo, o method do form obrigatoriamente deve ser post. -->
+
+        <p>
+            <label for="icor">Escolha uma cor:</label>
+            <input type="color" name="cor" id="icor" value="#447700"> <!-- para escolher a cor inicial, incluir em value o cóidigo hexadecimal -->
+        </p>
+
+        <p>
+            <label for="iaval">Avalie nosso serviço:</label>
+            <input type="range" name="aval" id="iaval" min="0" max="10" value="0"> <!-- por padrão o range vai de 0 a 100. Para escolher onde iniciar deve incluir o atributo value o valor desejado -->
+        </p>
+
+        <p>
+            <label for="idoc">Anexe o arquivo</label>
+            <input type="file" name="doc" id="idoc" required> <!-- Quando no formulário tiver envio de arquivo, o method do form obrigatoriamente deve ser post. -->
+        </p>
+
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m04e033c.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m04e033e.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
+
+
+
