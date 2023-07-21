@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com select, datalist e textarea - Módulo 4</title>
+    <link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Formulário com select, datalist e textarea</h1>
+    <p>
+        Elementos de formulário select, datalist e textarea
+    </p>
+
+    <hr>
+
+    <h2>Resolução do exercício</h2>
+
+    <form action="m04e033cadastro.php" method="post">
+        <!-- quando tiver uma textarea é indicado configurar o method="post" no formulário, pois o limite para o method="get" é de 3k bytes para envio  -->
+
+        <p>
+            <label for="iuf">Estado:</label>
+            <select name="uf" id="iuf">
+
+                <option value="--Escolha--" selected>--Escolha--</option>
+
+                <optgroup label="Região Sudeste"> <!-- a tag optgroup agrupa as opções da lista, através do atributo label -->
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                
+                <optgroup label="Região Nordeste"> <!-- a tag optgroup agrupa as opções da lista, através do atributo label -->
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+           </select> 
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Desenvolvedor</option>
+                <option>Estatístico</option>
+                <option>Professor</option>
+                <option>Publicitário</option>
+            </datalist>            
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <!-- quando tiver uma textarea é indicado configurar o method="post" no formulário, pois o limite para o method="get" é de 3k bytes para envio  -->
+        </p>
+        
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
