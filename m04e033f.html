@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com elemento output - Módulo 4</title>
+    <link rel="shortcut icon" href="imagens/favicon-2.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1>Formulário com elemento output</h1>
+
+    <hr>
+
+    <h2>Resolução do exercício</h2>
+
+    <fieldset>
+        <legend>Soma</legend>
+        <form action="m04e033cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="in1">Número 1</label>
+                <input type="number" name="n1" id="in1" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="in2">Número 2</label>
+                <input type="number" name="n2" id="in2" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        
+        </form>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Avaliação</legend>
+        <form action="m04e033cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inum">Número</label>
+                <input type="range" name="num" id="inum" required min="0" max="10" value="5" oninput="iaval.innerHTML = Number(inum.value)">
+                <output id="iaval">5</output>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Idade</legend>
+        <form action="m04e033cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="iano">Ano de nascimento</label>
+                <input type="number" name="Ano" id="iano" required min="1900" max="2023" oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="iidade">Sua idade é:</label>
+                <output id="iidade">0</output>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </fieldset>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value) 
+        }
+    </script>
+
+
+
+    <footer>
+        <p class="menurodape">
+            Página principal <a href="index.html" target="_self" rel="prev">&#11014</a>
+            <br>
+            Exercício anterior <a href="m04e033e.html" target="_self" rel="prev">&#11013</a>
+            <br>
+            Próximo exercício <a href="m04e034.html" target="_self" rel="next">&#10145</a>
+        </p>
+    </footer>
+    
+</body>
+</html>
