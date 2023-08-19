@@ -22,6 +22,7 @@ header > h1 {
     padding: 20px;
     font-size: 2em;
     text-align: center;
+    color: white;
 }
 
 span#menu-hamburguer {
@@ -33,10 +34,10 @@ span#menu-hamburguer {
     cursor: pointer;
 }
 
-span#menu-hamburguer:hover {
+/* span#menu-hamburguer:hover {
     background-color: rgb(245, 245, 245);
     color: rgb(29, 29, 29);
-}
+} */
 
 menu {
     display: none;
