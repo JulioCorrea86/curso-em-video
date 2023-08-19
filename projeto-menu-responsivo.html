@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="projeto-menu-responsivo-media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
 
     <header>
         
@@ -19,11 +20,11 @@
 
         <menu id="itensMenu">
             <ul>
-                <li><a href="#">Categoria 1</a></li>
-                <li><a href="#">Categoria 2</a></li>
-                <li><a href="#">Categoria 3</a></li>
-                <li><a href="#">Categoria 4</a></li>
-                <li><a href="#">Categoria 5</a></li>
+                <li><a href="#">HTML 5</a></li>
+                <li><a href="#">CSS 3</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Python</a></li>
             </ul>
         </menu>
 
@@ -33,23 +34,95 @@
 
         <article>
             
-            <h2>Testando Media Queries</h2>
+            <h2>O que é um site responsivo?</h2>
+                <p>
+                    Site responsivo é um tipo de site que se adapta a diferentes tamanhos de tela para proporcionar a melhor experiência ao usuário em qualquer dispositivo.
+                    Trata-se de um único site, com mesmo domínio, URLs, conteúdos e imagens, cujo design se altera conforme as configurações de tela do dispositivo. Dessa forma, ele se torna compatível com dispositivos móveis (mobile-friendly), que é uma das características essenciais para o desempenho de um site atualmente.
+                </p>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, quas tenetur! Nemo sapiente corporis facilis ratione cupiditate. Corporis tenetur dolorem nam eos dolores laborum soluta quo assumenda quia, quae aliquam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente dolore voluptatum quidem corrupti quaerat quia tenetur quod delectus corporis! Iste numquam enim consectetur ipsum laborum, ratione adipisci quasi quaerat neque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facilis accusantium vero sequi esse! Eius aut ipsam, quisquam est mollitia repellat assumenda dolorem. Molestiae unde alias suscipit dignissimos aliquid maxime!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo maxime laudantium eveniet fuga, odio ipsam excepturi debitis cupiditate, vel dolor officia! Impedit iure sunt ab esse error iusto fugit.
-                Qui consectetur optio aut illo veritatis necessitatibus praesentium esse velit fuga? Quasi rem nemo quas ea nisi molestias, beatae velit earum at nesciunt dolor id alias inventore eos. Porro, possimus.
-            </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sequi sit praesentium rem. Iusto et aliquam corporis maxime, vitae quasi asperiores omnis odio. Dignissimos temporibus tenetur pariatur, eum velit natus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio soluta nam laboriosam quo numquam unde dolor aliquid sapiente nulla, ut libero doloremque eum sint adipisci nemo blanditiis possimus exercitationem obcaecati.
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sed ullam veritatis quisquam nemo corporis assumenda beatae repellat sequi dicta mollitia minus, id soluta, maiores consectetur. Aspernatur veritatis praesentium repellat.
-                Soluta, impedit quidem eius quibusdam, odit, enim aliquid rerum vitae maiores magnam adipisci sequi molestias in ea necessitatibus nemo. Facilis commodi magni perferendis in, ipsam at hic voluptates!
-            </p>
+                <p>
+                    No exemplo abaixo, você pode ver como é um site responsivo na prática: o layout se modifica à medida que o tamanho da tela se altera. Para isso, é preciso aplicar layouts fluidos, imagens flexíveis e configurações de folhas de estilo (CSS), que entram no campo do desenvolvimento web.
+                    Porém, um site responsivo não se faz apenas com a técnica dos desenvolvedores. Designers também trabalham para planejar a melhor interface com o usuário em diferentes dispositivos, considerando a relevância de conteúdos e funcionalidades para cada contexto de uso.
+                </p>
+
+                <img src="imagens/projeto-menu-responsivo-foto-celular-1024x538.jpg" alt="Foto celilar">
+
+            <h2>Como surgiu o design responsivo</h2>
+                <p>A ideia de sites responsivos foi criada por Ethan Marcotte. Em um artigo para o blog A List Apart, em 2010, o designer provocou designers e desenvolvedores a praticarem o web design responsivo. Veja o que ele escreveu:</p>
+
+                <p>Em vez de adaptar designs desconectados a cada um de um número cada vez maior de dispositivos da web, podemos tratá-los como facetas da mesma experiência. Podemos projetar para uma experiência de visualização ideal, mas incorporar tecnologias baseadas em padrões em nossos projetos para torná-los não apenas mais flexíveis, mas mais adaptáveis ​​à mídia que os processa. Resumindo, precisamos praticar o design responsivo da web.</p>
+
+                <p>
+                    Ethan percebeu que os profissionais estavam desenvolvendo diferentes soluções para cada dispositivo que surgia, o que já estava se tornando inviável.
+                    Nos últimos anos, o surgimento de novos dispositivos conectados se acelerou ainda mais. Se antes tínhamos apenas o computador de mesa, agora temos notebooks, tablets, celulares, smart TVs e uma série de aparelhos que ainda podem surgir no âmbito da Internet das Coisas.
+                </p>
+
+                <p>Por isso, sites responsivos se tornaram uma solução relevante para criar sites adequados à era digital. Designers e desenvolvedores que trabalham com essa técnica preparam os sites não apenas para os dispositivos atuais, mas também para os do futuro.</p>
+
+            <h2>Outras formas de compatibilidade com dispositivos móveis</h2>
+                <p>Para ter um site mobile-friendly, o design responsivo é uma das formas mais indicadas. Mas não é a única. Você também pode adotar outras soluções, cada uma com seus prós e contras, assim como os sites responsivos. Conheça outras possibilidades:</p>
+
+                <ul>
+                    <l1>Criar uma versão mobile (m.exemplo.com), com uma URL diferente do desktop;</l1>
+                    <li>Aplicar o dynamic server (mesma URL para mobile e desktop, mas HTML e CSS diferentes);</li>
+                    <li>Usar páginas AMP (Accelerated Mobile Pages), desenvolvidas com foco na velocidade de carregamento em dispositivos móveis;</li>
+                    <li>Criar um aplicativo mobile.</li>
+                </ul>
+
+            <h2>Por que ter um site responsivo?</h2>
+                <p>
+                    Sites responsivos surgiram no contexto da explosão de smartphones e tablets no mercado. Cada dispositivo trazia uma configuração diferente, que exigia dos designers e desenvolvedores uma nova solução a cada novo lançamento.
+                    Como vimos, o design responsivo veio para solucionar isso, de maneira que você não precisa desenvolver um novo site para cada novo aparelho que surge.
+                </p>
+
+                <p>Com a evolução dos smartphones, as pessoas passaram a usar o celular para as mais diversas atividades do dia a dia, como consultar o Google, acessar as redes sociais, ler emails e, é claro, visitar sites, blogs e lojas virtuais. O computador, que até então era hegemônico no acesso à internet, ficou para trás.</p>
+
+                <p>
+                    O Think With Google mostra, nos dados abaixo, como o celular se tornou o principal dispositivo para acessar a internet, embora o desktop não tenha sido esquecido.
+                    Porém, muitas empresas demoraram para entender essa mudança de comportamento do consumidor. Muitos usuários se deparavam — e ainda se deparam — com sites que não funcionam no celular, demoram a carregar, não têm conteúdos legíveis e outros vários erros. Diante de todos esses obstáculos, só resta desistir da visita ao site…
+                </p>
+
+                <p>Por isso, ter um site responsivo é importante para atender a esses usuários que se conectam ora no mobile, ora no desktop — e, futuramente, nos mais diversos dispositivos conectados. Assim, você não perde nenhum visitante e nenhuma oportunidade de negócio. Afinal, segundo uma pesquisa:</p>
+
+                <ul>
+                    <li>58% dos brasileiros acessam a internet exclusivamente pelo celular;</li>
+                    <li>79% das pessoas na área rural têm acesso à internet no celular;</li>
+                    <li>85% das pessoas das classes D e E acessam a internet via celular.</li>
+                </ul>
+
+            <h2>Como o site responsivo pode ajudar a sua empresa?</h2>
+                <p>
+                    O uso do design responsivo no site da sua empresa traz diversas vantagens. Como você já viu, a responsividade é uma forma de adaptar o seu negócio à realidade de crescimento dos acessos por celular e de lançamento acelerado de novos dispositivos com diferentes telas.
+                    Agora, você vai entender como essa mudança no seu site pode trazer benefícios reais para o seu negócio:
+                </p>
+
+                <h3>Melhora a satisfação dos clientes</h3>
+                <p>
+                    O foco de um site responsivo é a experiência do usuário. É para oferecer uma melhor usabilidade aos usuários de dispositivos móveis que esse tipo de design foi criado.
+                    Por isso, o site responsivo colabora para a satisfação dos clientes, que se sentem bem recebidos nas suas páginas e conseguem realizar facilmente o que desejam. Dessa maneira, a marca ganha a confiança dos usuários e constrói uma imagem positiva.
+                </p>
+
+                <h3>Reduz a taxa de rejeição</h3>
+                <p>
+                    A taxa de rejeição acontece quando o visitante acessa o site e fecha a página sem realizar qualquer interação. Em muitos casos, significa que ele não encontrou ou não conseguiu realizar o que queria.
+                    Se o site não é responsivo, a taxa de rejeição tende a ser alta, porque faz os usuários desistirem da visita. Então, a responsividade pode melhorar essa métrica do seu site e gerar mais interações com as páginas.
+                </p>
+
+                <h3>Aumenta as conversões</h3>
+                <p>
+                    Se o usuário consegue acessar o site e realizar o que deseja sem obstáculos, as conversões do site tendem a aumentar.
+                    Por outro lado, se o site não funcionar bem em dispositivos móveis, você pode perder inúmeras oportunidades de negócio, já que os usuários logo desistem da visita quando encontram qualquer dificuldade.
+                </p>
+
+                <h3>Melhora o SEO</h3>
+                <p>
+                    Ter um site mobile-friendly é um dos principais fatores de rankeamento do Google. Afinal, o buscador sabe a importância de melhorar a usabilidade em dispositivos móveis.
+                    Além disso, o Google identifica os sinais da experiência do usuário no site — taxa de rejeição, tempo de permanência na página, cliques e interações, entre outros indicadores. Se esses sinais são positivos, como deve acontecer em um site responsivo, as páginas tendem a melhorar o SEO e ganhar posições no Google.
+                </p>
+
         </article>
+
+        <p id="rockcontent">Matéria do blog <a href="https://rockcontent.com/br/blog/site-responsivo/" target="_blank" rel="external">Rockcontent</a>.</p>
 
     </main>
 
@@ -60,6 +133,15 @@
     </footer>
 
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itensMenu.style.display = 'block'
+            } else {
+                itensMenu.style.display = 'none'
+            }   
+        }
+
         function clickMenu() {
             if (itensMenu.style.display == 'block') {
                 itensMenu.style.display = 'none'

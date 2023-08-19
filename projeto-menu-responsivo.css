@@ -75,10 +75,42 @@ article h2 {
     padding-bottom: 20px;
 }
 
-article p {
+article > p {
     padding-bottom: 20px; 
     text-align: justify;
     text-indent: 20px;
+    line-height: 1.5em;    
+}
+
+article ul {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    line-height: 1.5em;    
+}
+
+article img {
+    width: 80vw;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+p#rockcontent {
+    font-weight: bold;
+    font-style:italic;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+p#rockcontent > a {
+    text-decoration: none;
+    padding: 3px;
+}
+
+p#rockcontent > a:hover {
+    background-color: rgb(0, 142, 207);
+    color: white;
 }
 
 footer {
