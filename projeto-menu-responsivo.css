@@ -39,15 +39,15 @@ span#menu-hamburguer {
     color: rgb(29, 29, 29);
 } */
 
-menu {
+nav {
     display: none;
 }
 
-menu > ul {
+nav > ul {
     list-style-type: none;
 }
 
-menu > ul > li > a {
+nav > ul > li > a {
     display: block;
     padding: 10px;
     background-color: rgb(66, 66, 66);
@@ -57,7 +57,7 @@ menu > ul > li > a {
     border-top: 1px solid grey;
 }
 
-menu > ul > li > a:hover {
+nav > ul > li > a:hover {
     background-color: rgb(175, 175, 175)
 }
 
