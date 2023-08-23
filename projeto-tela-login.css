@@ -44,7 +44,7 @@ section#login {
     overflow: hidden;
 
     transition: width .3s, height .3s;
-    transition-timing-function: ease;
+    transition-timing-function: ease; /* usado para transição ficar mais suave */
 
 }
 
@@ -58,4 +58,6 @@ section#login > div#imagem {
 section#login > div#formulario {
     display: block;
     padding: 10px;
+    margin: auto;
 }
+
