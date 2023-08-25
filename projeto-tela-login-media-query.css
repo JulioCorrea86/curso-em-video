@@ -40,6 +40,10 @@
         height: 100%;
         float: right;
     }
+
+    form > a {
+        width: 240px;
+    }
     
 }
 
@@ -65,6 +69,10 @@
         width: 50%;
         height: 100%;
         float: left;
+    }
+
+    form > a {
+        width: 240px;
     }
     
 }
