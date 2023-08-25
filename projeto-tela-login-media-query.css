@@ -18,6 +18,7 @@
     Lilás: #5f2c82 
 */
 
+/* VERSÃO PARA TABLET */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     body {
@@ -43,6 +44,7 @@
 }
 
 
+/* VERSÃO PARA DESKTOP E TELAS GRANDES */
 @media screen and (min-width: 992px) {
 
     body {
