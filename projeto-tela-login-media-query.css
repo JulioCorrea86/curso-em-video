@@ -30,20 +30,24 @@
     }
 
     section#login > div#imagem {
-        width: 30%;
+        width: 40%;
         height: 100%;
         float: left;
     }
 
     section#login > div#formulario {
-        width: 70%;
+        width: 60%;
         height: 100%;
         float: right;
     }
 
-    form > a {
+    /* form > input[type=submit] {
         width: 240px;
     }
+
+    form > a.esqueci-senha {
+        width: 240px;
+    } */
     
 }
 
@@ -71,9 +75,13 @@
         float: left;
     }
 
-    form > a {
+    /* form > input[type=submit] {
         width: 240px;
     }
+
+    form > a.esqueci-senha {
+        width: 240px;
+    } */
     
 }
 
