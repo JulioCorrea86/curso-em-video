@@ -19,14 +19,13 @@ html, body {
     background-color: #5f2c82;
     width: 100vw;
     height: 100vh;
+    position: relative;
+
 }
 
 main {
     width: 100vw;
     height: calc(100% - 50px);
-
-    position: relative;
-
 
 }
 
@@ -147,7 +146,9 @@ form > a.esqueci-senha > i {
 
 footer {
     background-color: rgb(194, 194, 194);
+    width: 100vw;
     height: 50px;
     padding: 15px;
     text-align: center;
 }
+
