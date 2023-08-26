@@ -78,7 +78,7 @@ div#formulario > p {
 
 form > div.campo {
     display: block;
-    width: 100%;
+    /* width: 100%; */
     height: 30px;
     margin: 5px;
     background-color: #5f2c82;
@@ -107,7 +107,8 @@ div.campo > input {
 
 form > input[type=submit] {
     display: block;
-    width: 100%;
+    margin: auto;
+    width: 98%;
     height: 40px;
     margin-top: 5px;
     background-color: #49a09d;
@@ -125,8 +126,9 @@ form > input[type=submit]:hover {
 
 form > a.esqueci-senha {
     display: block;
+    margin: auto;
     text-align: center;
-    width: 100%;
+    width: 98%;
     height: 40px;
     margin-top: 5px;
     background-color: white;
