@@ -47,7 +47,7 @@
     }
 
     div.campo > input {
-        transform: translate(-0.1px , -7px);
+        transform: translateY(-6px);
     }
 
     /* form > input[type=submit] {
@@ -90,7 +90,7 @@
     }
 
     div.campo > input {
-        transform: translate(-0.1px , -7px);
+        transform: translateY(-6px);
     }
 
     /* form > input[type=submit] {
