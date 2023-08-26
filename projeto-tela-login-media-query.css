@@ -42,9 +42,9 @@
         float: right;
     }
 
-    form > div.campo {
+    /* form > div.campo {
         border: 2px solid #5f2c82;
-    }
+    } */
 
     div.campo > input {
         transform: translateY(-6px);
@@ -85,9 +85,9 @@
         float: left;
     }
 
-    form > div.campo {
+    /* form > div.campo {
         border: 2px solid #5f2c82;
-    }
+    } */
 
     div.campo > input {
         transform: translateY(-6px);
