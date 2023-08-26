@@ -19,6 +19,7 @@ html, body {
     background-color: #5f2c82;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 main {
@@ -82,7 +83,7 @@ form > div.campo {
     margin: 5px;
     background-color: #5f2c82;
     border: 1px solid #5f2c82;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 form > div.campo > label {
@@ -127,7 +128,6 @@ form > a.esqueci-senha {
     text-align: center;
     width: 100%;
     height: 40px;
-    padding: 5px 0px;
     margin-top: 5px;
     background-color: white;
     border: 1.5px solid #316d6b;
@@ -138,6 +138,10 @@ form > a.esqueci-senha {
 }
 
 form > a.esqueci-senha:hover {
-    background-color: #9bbbba;
+    background-color: #c6ebea;
+}
+
+form > a.esqueci-senha > i {
+    transform: translateY(7px);
 }
 
