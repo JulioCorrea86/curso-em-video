@@ -93,13 +93,17 @@
         transform: translateY(-6px);
     }
 
-    /* form > input[type=submit] {
-        width: 240px;
+    form > input[type=submit] {
+        display: inline-block;
+        width: 49%;
     }
 
     form > a.esqueci-senha {
-        width: 240px;
-    } */
+        display: inline-block;
+        width: 49%;
+        margin-left: 2px;
+
+    }
     
 }
 
